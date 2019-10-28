@@ -1,0 +1,90 @@
+@import '_overrides.sass';
+@import "~react-bulma-components/src/index.sass";
+
+body {
+    background: $body-background;
+    color: $body-color;
+
+    a {
+        color: $link;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+
+    .navbar {
+        justify-content: center;
+        padding: 1rem 0;
+
+        .navbar-brand {
+            justify-content: center;
+
+            img {
+                max-width: 8rem
+            }
+        }
+    }
+
+    button {
+        &.is-primary.is-primary {
+            color: #fff !important;
+            background-color: $primary;
+
+            &:hover {
+                background-color: darken($primary, 10%);
+                ;
+            }
+        }
+    }
+
+    .notification {
+        text-align: center;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .help {
+        font-size: 0.9rem;
+    }
+
+    .hide-mobile {
+        display: none;
+
+        @media(min-width: 768px) {
+            display: table-cell;
+        }
+    }
+
+    .table.table {
+        margin: 1rem 0;
+
+        img {
+            max-width: 2.5rem;
+        }
+
+        thead {
+            th {
+                text-align: center;
+                padding-bottom: 0.8rem;
+                margin: 0;
+            }
+        }
+
+        tbody {
+
+            td,
+            th {
+                text-align: center;
+            }
+        }
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .modal-card-foot {
+        justify-content: flex-end;
+    }
+}
