@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/victsant/react-golf-leaderboard/issues"
   },
-  "homepage": "http://victsant.github.io/react-leaderboard",
+  "homepage": "https://victsant.github.io/react-golf-leaderboard",
   "dependencies": {
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
