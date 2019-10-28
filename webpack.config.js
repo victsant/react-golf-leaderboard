@@ -9,8 +9,8 @@ const config = {
         main: ['./src/index.js']
     },
     output: {
-        filename: '[name].[hash].bundle.js',
-        path: path.resolve(__dirname, './build'),
+        path: path.resolve(__dirname, 'build/'),
+        filename: '[name].bundle.js',
         publicPath: '/',
     },
     optimization: {
@@ -55,8 +55,9 @@ const config = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.html",
-            filename: "./index.html",
+            inject: true,
+            entryPoint: "src/index.html",
+            filename: "index.html",
             chunks: ['main', 'vendor']
         })
     ]
