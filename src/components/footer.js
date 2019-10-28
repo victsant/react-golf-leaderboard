@@ -10,7 +10,7 @@ const Footer = () => (
             <BulmaContent className="centered">
                 <>
                     <p>
-                        React Golf Leaderboard built using <strong>React, Bulma and Emotion</strong>.
+                        React Golf Leaderboard built using <strong>React and Bulma</strong>.
                     </p>
                     <p>
                         &copy;{(new Date().getFullYear())}&nbsp;Victor Santana
