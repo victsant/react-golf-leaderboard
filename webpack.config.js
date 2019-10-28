@@ -5,9 +5,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const isAnalyze = process.env.analyze === 'true';
 
 const config = {
-    entry: {
-        main: ['./src/index.js']
-    },
+    entry: path.join(__dirname, "./src/index.js"),
     output: {
         path: path.resolve(__dirname, 'build/'),
         filename: '[name].bundle.js',
@@ -55,9 +53,7 @@ const config = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            inject: true,
-            entryPoint: "src/index.html",
-            filename: "index.html",
+            template: "index.html",
             chunks: ['main', 'vendor']
         })
     ]
