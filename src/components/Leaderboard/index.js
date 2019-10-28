@@ -34,7 +34,7 @@ const Leaderboard = ({ players, remove }) => (
 );
 
 Leaderboard.propTypes = {
-    players: PropTypes.shape({}).isRequired,
+    players: PropTypes.array.isRequired,
     remove: PropTypes.func.isRequired,
 };
 
